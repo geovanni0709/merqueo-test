@@ -1,0 +1,242 @@
+{
+    "customers_addresses": [
+        {
+            "customer_id": 1,
+            "addresses": [
+                {
+                    "id": 1,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 14 # 87 - 20",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 2,
+            "addresses": [
+                {
+                    "id": 2,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 20 # 164A - 5",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 3,
+            "addresses": [
+                {
+                    "id": 3,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 13 # 74 - 38",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 4,
+            "addresses": [
+                {
+                    "id": 4,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "CL 93 # 12 - 9",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 5,
+            "addresses": [
+                {
+                    "id": 5,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "CL 71 # 3 - 74",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 6,
+            "addresses": [
+                {
+                    "id": 6,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 20 # 134A - 5",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 7,
+            "addresses": [
+                {
+                    "id": 7,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "CL 80 # 14 - 38",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 8,
+            "addresses": [
+                {
+                    "id": 8,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 14 # 98 - 74",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 9,
+            "addresses": [
+                {
+                    "id": 9,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 58 # 93 - 1",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 10,
+            "addresses": [
+                {
+                    "id": 10,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "CL 93B # 17 - 12",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 11,
+            "addresses": [
+                {
+                    "id": 11,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 68D # 98A - 11",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 12,
+            "addresses": [
+                {
+                    "id": 12,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "AC 72 # 20 - 45",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 13,
+            "addresses": [
+                {
+                    "id": 13,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 22 # 122 - 57",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        },
+        {
+            "customer_id": 14,
+            "addresses": [
+                {
+                    "id": 14,
+                    "address_name": "Mi casa",
+                    "country_id": 1,
+                    "depto_id": 1,
+                    "city_id": 1,
+                    "street": "KR 88 # 72A - 26",
+                    "postcode": "110111",
+                    "additional_info": "",
+                    "phone": "",
+                    "is_active": 1
+                }
+            ]
+        }
+    ]
+}

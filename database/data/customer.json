@@ -1,0 +1,116 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "Sofia",
+            "identification": "11.111.111",
+            "email": "sofia@gmail.com",
+            "phone": "3610000",
+            "is_active": 1
+        },
+        {
+            "id": 2,
+            "name": "Angel",
+            "identification": "22.222.222",
+            "email": "angel@gmail.com",
+            "phone": "3620000",
+            "is_active": 1
+        },
+        {
+            "id": 3,
+            "name": "Hocks",
+            "identification": "33.333.333",
+            "email": "hocks@gmail.com",
+            "phone": "3630000",
+            "is_active": 1
+        },
+        {
+            "id": 4,
+            "name": "Michael",
+            "identification": "44.444.444",
+            "email": "michael@gmail.com",
+            "phone": "3640000",
+            "is_active": 1
+        },
+        {
+            "id": 5,
+            "name": "Bar de Alex",
+            "identification": "55.555.555",
+            "email": "bar.alex@gmail.com",
+            "phone": "3650000",
+            "is_active": 1
+        },
+        {
+            "id": 6,
+            "name": "Sabor Criollo",
+            "identification": "66.666.666",
+            "email": "sabor.criollo@gmail.com",
+            "phone": "3660000",
+            "is_active": 1
+        },
+        {
+            "id": 7,
+            "name": "El Pollo Rojo",
+            "identification": "77.777.777",
+            "email": "pollo.rojo@gmail.com",
+            "phone": "3670000",
+            "is_active": 1
+        },
+        {
+            "id": 8,
+            "name": "All Salad",
+            "identification": "88.888.888",
+            "email": "all.salad@gmail.com",
+            "phone": "3680000",
+            "is_active": 1
+        },
+        {
+            "id": 9,
+            "name": "Parrilla y sabor",
+            "identification": "99.999.999",
+            "email": "parrilla.sabor@gmail.com",
+            "phone": "3690000",
+            "is_active": 1
+        },
+        {
+            "id": 10,
+            "name": "Restaurante yerbabuena",
+            "identification": "10.100.100",
+            "email": "restaurante.yerbabuena@gmail.com",
+            "phone": "3700000",
+            "is_active": 1
+        },
+        {
+            "id": 11,
+            "name": "Luis David",
+            "identification": "20.200.200",
+            "email": "luis.david@gmail.com",
+            "phone": "3710000",
+            "is_active": 1
+        },
+        {
+            "id": 12,
+            "name": "David Carruyo",
+            "identification": "50.500.500",
+            "email": "david.carruyo@gmail.com",
+            "phone": "3740000",
+            "is_active": 1
+        },
+        {
+            "id": 13,
+            "name": "Mario",
+            "identification": "30.300.300",
+            "email": "mario@gmail.com",
+            "phone": "3720000",
+            "is_active": 1
+        },
+        {
+            "id": 14,
+            "name": "Harold",
+            "identification": "40.400.400",
+            "email": "harold@gmail.com",
+            "phone": "3730000",
+            "is_active": 1
+        }
+    ]
+}

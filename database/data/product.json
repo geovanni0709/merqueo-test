@@ -1,0 +1,219 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Leche",
+            "sku": "0001"
+        },
+        {
+            "id": 2,
+            "name": "Huevos",
+            "sku": "0002"
+        },
+        {
+            "id": 3,
+            "name": "Manzana Verde",
+            "sku": "0003"
+        },
+        {
+            "id": 4,
+            "name": "Pepino Cohombro",
+            "sku": "0004"
+        },
+        {
+            "id": 5,
+            "name": "Pimentón Rojo",
+            "sku": "0005"
+        },
+        {
+            "id": 6,
+            "name": "Kiwi",
+            "sku": "0006"
+        },
+        {
+            "id": 7,
+            "name": "Cebolla Cabezona Blanca Limpia",
+            "sku": "0007"
+        },
+        {
+            "id": 8,
+            "name": "Habichuela",
+            "sku": "0008"
+        },
+        {
+            "id": 9,
+            "name": "Mango Tommy Maduro",
+            "sku": "0009"
+        },
+        {
+            "id": 10,
+            "name": "Tomate Chonto Pintón",
+            "sku": "0010"
+        },
+        {
+            "id": 11,
+            "name": "Zanahoria Grande",
+            "sku": "0011"
+        },
+        {
+            "id": 12,
+            "name": "Aguacate Maduro",
+            "sku": "0012"
+        },
+        {
+            "id": 13,
+            "name": "Kale o Col Rizada",
+            "sku": "0013"
+        },
+        {
+            "id": 14,
+            "name": "Cebolla Cabezona Roja Limpia",
+            "sku": "0014"
+        },
+        {
+            "id": 15,
+            "name": "Tomate Chonto Maduro",
+            "sku": "0015"
+        },
+        {
+            "id": 16,
+            "name": "Acelga",
+            "sku": "0016"
+        },
+        {
+            "id": 17,
+            "name": "Espinaca Bogotana x 500grs",
+            "sku": "0017"
+        },
+        {
+            "id": 18,
+            "name": "Ahuyama",
+            "sku": "0018"
+        },
+        {
+            "id": 19,
+            "name": "Cebolla Cabezona Blanca Sin Pelar",
+            "sku": "0019"
+        },
+        {
+            "id": 20,
+            "name": "Melón",
+            "sku": "0020"
+        },
+        {
+            "id": 21,
+            "name": "Cebolla Cabezona Roja Sin Pelar",
+            "sku": "0021"
+        },
+        {
+            "id": 22,
+            "name": "Cebolla Larga Junca x 500grs",
+            "sku": "0022"
+        },
+        {
+            "id": 23,
+            "name": "Hierbabuena x 500grs",
+            "sku": "0023"
+        },
+        {
+            "id": 24,
+            "name": "Lechuga Crespa Verde",
+            "sku": "0024"
+        },
+        {
+            "id": 25,
+            "name": "Limón Tahití",
+            "sku": "0025"
+        },
+        {
+            "id": 26,
+            "name": "Mora de Castilla",
+            "sku": "0026"
+        },
+        {
+            "id": 27,
+            "name": "Pimentón Verde",
+            "sku": "0027"
+        },
+        {
+            "id": 28,
+            "name": "Tomate Larga Vida Maduro",
+            "sku": "0028"
+        },
+        {
+            "id": 29,
+            "name": "Cilantro x 500grs",
+            "sku": "0029"
+        },
+        {
+            "id": 30,
+            "name": "Fresa Jugo",
+            "sku": "0030"
+        },
+        {
+            "id": 31,
+            "name": "Papa R-12 Mediana",
+            "sku": "0031"
+        },
+        {
+            "id": 32,
+            "name": "Curuba",
+            "sku": "0032"
+        },
+        {
+            "id": 33,
+            "name": "Brócoli",
+            "sku": "0033"
+        },
+        {
+            "id": 34,
+            "name": "Aguacate Hass Pintón",
+            "sku": "0034"
+        },
+        {
+            "id": 35,
+            "name": "Aguacate Hass Maduro ",
+            "sku": "0035"
+        },
+        {
+            "id": 36,
+            "name": "Aguacate Pintón",
+            "sku": "0036"
+        },
+        {
+            "id": 37,
+            "name": "Pan Bimbo",
+            "sku": "0037"
+        },
+        {
+            "id": 39,
+            "name": "Lechuga Crespa Morada",
+            "sku": "0039"
+        },
+        {
+            "id": 41,
+            "name": "Banano",
+            "sku": "0041"
+        },
+        {
+            "id": 43,
+            "name": "Banano",
+            "sku": "0043"
+        },
+        {
+            "id": 45,
+            "name": "Paquete Galleta Oreo",
+            "sku": "0045"
+        },
+        {
+            "id": 46,
+            "name": "Apio",
+            "sku": "0046"
+        },
+        {
+            "id": 47,
+            "name": "Mandarina",
+            "sku": "0047"
+        }
+    ]
+}

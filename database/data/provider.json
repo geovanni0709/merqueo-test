@@ -1,0 +1,28 @@
+{
+    "providers": [
+        {
+            "id": 1,
+            "name": "Ruby",
+            "contact_name": "Ruby",
+            "rut": "11.111.111-1",
+            "phone": "3955555",
+            "address_location": "Avenida 48 # 11-11"
+        },
+        {
+            "id": 2,
+            "name": "Raul",
+            "contact_name": "Raul",
+            "rut": "22.222.222-2",
+            "phone": "3966666",
+            "address_location": "Avenida 59 # 22-22"
+        },
+        {
+            "id": 3,
+            "name": "Angelica",
+            "contact_name": "Angelica",
+            "rut": "33.333.333-3",
+            "phone": "3977777",
+            "address_location": "Avenida 60 # 33-33"
+        }
+    ]
+}
