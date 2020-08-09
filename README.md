@@ -43,8 +43,7 @@ php artisan db:seed
 
 # PRUEBAS
 
-Ejecución de las pruebas
-./vendor/bin/phpunit
+Para ejecutar las pruebas digitar en consola el comando ./vendor/bin/phpunit
 
 # ENDPOINTS
 
