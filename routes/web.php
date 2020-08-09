@@ -29,6 +29,11 @@ $router->group(['prefix' => 'rest/v1'], function ($productId) use ($router) {
         'uses' => 'ProductsDeliveryByProviderController@getProductsDeliveryByProvider'
     ]);
 
+    /** Calculate inventory next day by date */
+    $router->get('inventory/calculate-next-day/{date}', [
+        'uses' => 'CalculateInventoryNextDayController@calculateInventoryNextDay'
+    ]);
+
     /** Get best selling products */
     $router->get('best-selling-products/{orderDate}', [
         'uses' => 'BestSellingProductsController@getBestSellingProducts'

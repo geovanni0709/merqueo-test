@@ -2,8 +2,11 @@
 
 namespace Tests\Unit;
 
+use Tests\TestCase;
 use Laravel\Lumen\Testing\DatabaseMigrations;
 use Laravel\Lumen\Testing\DatabaseTransactions;
+use Merqueo\ApiRest\Delivery\Infraestructure\Persistence\Eloquent\DeliveryRepository;
+use Merqueo\ApiRest\Delivery\Application\GetDeliveryByOrder;
 
 /**
  * class DeliveryTest
@@ -11,14 +14,13 @@ use Laravel\Lumen\Testing\DatabaseTransactions;
 class DeliveryTest extends TestCase
 {
     /**
-     * Test waiting for a response 200 
+     * Test GetDeliveryByOrder
      *
      * @return void
      */
-    public function testDeliveryByOrder()
+    public function testGetDeliveryByOrder()
     {
-        $response = $this->call('GET', 'rest/v1/delivery/order/1');
-
-        $this->assertEquals(200, $response->status());
+        $deliveryByOrder = new GetDeliveryByOrder(new DeliveryRepository());
+        $this->assertIsArray($deliveryByOrder->execute(1));
     }
 }

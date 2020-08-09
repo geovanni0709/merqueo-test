@@ -44,7 +44,35 @@ php artisan db:seed
 # PRUEBAS
 Para ejecutar las pruebas ejecutar el comando ./vendor/bin/phpunit en la consola
 
-Pruebas Unitarias
+Ejecución de las pruebas
 ./vendor/bin/phpunit
 
-De igual forma adjuento dump de la base de datos.IT).
+De igual forma adjuento dump de la base de datos.
+
+# ENDPOINTS
+
+● Consultar qué productos y qué cantidad puede ser alistada desde el inventario.
+  dominio/rest/v1/inventory-can-delivery
+
+● Consultar los productos que deben ser alistados por transportadores, y a qué
+  transportador le corresponde cada pedido.
+  dominio/rest/v1/inventory-delivery-provider
+
+● Productos menos vendidos el día 1 de marzo.
+  dominio/rest/v1/worst-selling-products/2019-03-01
+  Recibo la fecha a consultar.
+
+● Dado el Id de un pedido, saber qué productos y qué cantidad pueden ser alistados.
+  según sistema de inventario y cuáles deben ser abastecidos por los proveedores.
+  dominio/rest/v1/delivery/order/1
+  Recibo el ID de orden a consultar.
+
+● Calcular el inventario del día 2 de marzo, teniendo en cuenta las pedidos
+  despachados el 1 de marzo.
+  dominio/rest/v1/inventory/calculate-next-day/2019-03-01
+  Recibo la fecha anterior a consultar.
+
+● Productos más vendidos el día 1 de marzo.
+  dominio/rest/v1/best-selling-products/2019-03-01
+  Recibo la fecha a consultar.
+

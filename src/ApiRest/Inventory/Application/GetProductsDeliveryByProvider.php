@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Merqueo\ApiRest\Inventory\Application;
 
 use Merqueo\ApiRest\Inventory\Domain\Contracts\InventoryRepository;
-use Merqueo\ApiRest\Inventory\Domain\InventoryEntity;
 use Merqueo\ApiRest\Inventory\Domain\InventoryProductId;
 
 /**

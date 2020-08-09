@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Merqueo\ApiRest\Inventory\Application;
 
 use Merqueo\ApiRest\Inventory\Domain\Contracts\InventoryRepository;
-use Merqueo\ApiRest\Inventory\Domain\InventoryProductId;
+use Merqueo\ApiRest\Inventory\Domain\InventoryDate;
 
 /**
- * class GetInventoryByProduct
+ * class CalculateInventoryNextDay
  */
-final class GetInventoryByProduct
+final class CalculateInventoryNextDay
 {
     /**
      * @var InventoryRepository
@@ -28,12 +28,12 @@ final class GetInventoryByProduct
     /**
      * Get inventory by product
      * 
-     * @param int $productId
+     * @param int $date
      * @return array
      */
-    public function execute(int $productId): array
+    public function execute(string $date): array
     {
-        $response = $this->repository->getInventoryByProductId(new InventoryProductId($productId));
+        $response = $this->repository->calculateInventoryNextDay(new InventoryDate($date));
         
         return $response;
     }

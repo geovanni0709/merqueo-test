@@ -2,8 +2,12 @@
 
 namespace Tests\Unit;
 
+use Tests\TestCase;
 use Laravel\Lumen\Testing\DatabaseMigrations;
 use Laravel\Lumen\Testing\DatabaseTransactions;
+use Merqueo\ApiRest\Order\Application\GetBestSellingProducts;
+use Merqueo\ApiRest\Order\Application\GetWorstSellingProducts;
+use Merqueo\ApiRest\Order\Infraestructure\Persistence\Eloquent\OrderRepository;
 
 /**
  * class OrderTest
@@ -11,26 +15,24 @@ use Laravel\Lumen\Testing\DatabaseTransactions;
 class OrderTest extends TestCase
 {
     /**
-     * Test waiting for a response 200 
+     * Test GetBestSellingProducts
      *
      * @return void
      */
-    public function testGetBestSelling()
+    public function testGetBestSellingProducts()
     {
-        $response = $this->call('GET', 'rest/v1/best-selling-products/2019-03-01');
-
-        $this->assertEquals(200, $response->status());
+        $bestSellingProducts = new GetBestSellingProducts(new OrderRepository());
+        $this->assertIsArray($bestSellingProducts->execute('2020-08-08'));
     }
 
     /**
-     * Test waiting for a response 200 
+     * Test GetWorstSellingProducts
      *
      * @return void
      */
-    public function testGetWorstSelling()
+    public function testGetWorstSellingProducts()
     {
-        $response = $this->call('GET', 'rest/v1/worst-selling-products/2019-03-01');
-
-        $this->assertEquals(200, $response->status());
+        $worstSellingProducts = new GetWorstSellingProducts(new OrderRepository());
+        $this->assertIsArray($worstSellingProducts->execute('2020-08-08'));
     }
 }

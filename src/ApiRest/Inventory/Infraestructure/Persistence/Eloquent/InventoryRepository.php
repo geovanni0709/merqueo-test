@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use Merqueo\ApiRest\Inventory\Domain\Contracts\InventoryRepository as InventoryRepositoryInterface;
 use Merqueo\ApiRest\Inventory\Domain\InventoryEntity;
 use Merqueo\ApiRest\Inventory\Domain\InventoryProductId;
+use Merqueo\ApiRest\Inventory\Domain\InventoryDate;
 
 /**
  * class InventoryRepository
@@ -33,8 +34,7 @@ final class InventoryRepository implements InventoryRepositoryInterface
                 'inventory.qty as inventory_qty',
                 'inventory.inventory_date'
             )
-            ->join('order_item', function($join)
-            {
+            ->join('order_item', function($join) {
                 $join->on('inventory.product_id', '=', 'order_item.product_id');
                 $join->on('order_item.qty', '<=', 'inventory.qty');
             })
@@ -65,8 +65,7 @@ final class InventoryRepository implements InventoryRepositoryInterface
                 'provider.name as provider_name',
                 DB::raw('order_item.qty-inventory.qty as provider_qty')
             )
-            ->join('order_item', function($join)
-            {
+            ->join('order_item', function($join) {
                 $join->on('inventory.product_id', '=', 'order_item.product_id');
                 $join->on('order_item.qty', '>', 'inventory.qty');
             })
@@ -98,6 +97,49 @@ final class InventoryRepository implements InventoryRepositoryInterface
             ->join('product', 'inventory.product_id', '=', 'product.id')
             ->where('product_id', $productId->value())
             ->get()->toArray();
+    }
+
+    /**
+     * Calculate inventory next day
+     * 
+     * @param InventoryDate $date
+     * @return array
+     */
+    public function calculateInventoryNextDay(InventoryDate $date): array
+    {
+        $result = [];
+        $collection = DB::table('inventory')
+            ->select(
+                'inventory.warehouse_id',
+                'inventory.product_id',
+                'product.sku',
+                'product.name',
+                'inventory.qty',
+                DB::raw('
+                    (SELECT 
+                    SUM(qty)
+                    FROM order_item
+                    INNER JOIN `order`
+                    ON order_item.order_id = `order`.id
+                    WHERE order_item.product_id = inventory.product_id
+                    GROUP BY product_id, delivery_date) AS ordered_qty'
+                )
+            )
+            ->join('product', 'inventory.product_id', '=', 'product.id')
+            ->where('inventory_date', $date->value()->format('Y-m-d H:i:s'))
+            ->get()->toArray();
+
+        foreach ($collection as $key => $item) {
+            $result[] = [
+                'warehouse_id' => $item->warehouse_id,
+                'product_id' => $item->product_id,
+                'sku' => $item->sku,
+                'name' => $item->name,
+                'needed_qty' => (float)(($item->qty >= $item->ordered_qty) ? $item->ordered_qty : $item->qty)
+            ];
+        }
+
+        return $result;
     }
 
     /**

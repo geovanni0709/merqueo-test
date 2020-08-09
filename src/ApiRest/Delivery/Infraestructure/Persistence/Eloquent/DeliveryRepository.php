@@ -47,7 +47,7 @@ final class DeliveryRepository implements DeliveryRepositoryInterface
             ->orderBy('priority')
             ->where('order.id', $orderId->value())
             ->get()->toArray();
-        //echo '<pre>';print_r($collection); echo '</pre>';exit;
+        
         foreach ($collection as $key => $item) {
             if ((float)$item->ordered_qty <= (float)$item->inventory_qty) {
                 $inventoryArray[] = $item;

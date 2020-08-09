@@ -6,18 +6,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\ResponseInterface;
-use Merqueo\ApiRest\Order\Application\GetWorstSellingProducts;
-use Merqueo\ApiRest\Order\Domain\Contracts\OrderRepository;
+use Merqueo\ApiRest\Inventory\Application\CalculateInventoryNextDay;
+use Merqueo\ApiRest\Inventory\Domain\Contracts\InventoryRepository;
 
 /**
- * class WorstSellingProductsController
+ * class CalculateInventoryNextDayController
  */
-class WorstSellingProductsController extends Controller
+class CalculateInventoryNextDayController extends Controller
 {
     /**
-     * @var GetWorstSellingProducts
+     * @var CalculateInventoryNextDay
      */
-    private $worstSelling;
+    private $inventoryNextDay;
 
     /**
      * @var ResponseInterface
@@ -27,30 +27,30 @@ class WorstSellingProductsController extends Controller
     /**
      * Constructor
      * 
-     * @param GetWorstSellingProducts $worstSelling
+     * @param CalculateInventoryNextDay $inventoryNextDay
      * @return void
      */
     public function __construct(
-        GetWorstSellingProducts $worstSelling,
+        CalculateInventoryNextDay $inventoryNextDay,
         ResponseInterface $responseInterface
     ){
-        $this->worstSelling = $worstSelling;
+        $this->inventoryNextDay = $inventoryNextDay;
         $this->responseInterface = $responseInterface;
     }
 
     /**
-     * Get worst selling products
+     * Calculate inventory next day
      * 
      * @param Request $request
      * @return json string
      */
-    public function getWorstSellingProducts(Request $request)
+    public function calculateInventoryNextDay(Request $request)
     {
         //try {
-            $orderDate = (string)$request->orderDate;
-            $inventory = $this->worstSelling->execute($orderDate);
+            $date = (string)$request->date;
+            $inventoryNexyDay = $this->inventoryNextDay->execute($date);
             
-            if (is_array($inventory) && count($inventory) == 0) {
+            if (is_array($inventoryNexyDay) && count($inventoryNexyDay) == 0) {
                 $response = $this->responseInterface
                     ->setCode(ResponseInterface::NO_CONTENT)
                     ->setMessage('No Content')
@@ -59,7 +59,7 @@ class WorstSellingProductsController extends Controller
                 $response = $this->responseInterface
                     ->setCode(ResponseInterface::OK)
                     ->setMessage('OK')
-                    ->setData($inventory);
+                    ->setData($inventoryNexyDay);
             }
         /*} catch(\Exception $e) {
             $response = $this->responseInterface

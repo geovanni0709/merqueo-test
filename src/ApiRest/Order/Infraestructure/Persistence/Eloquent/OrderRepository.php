@@ -44,15 +44,19 @@ final class OrderRepository implements OrderRepositoryInterface
     {
         return DB::table('product')
             ->select(
-                DB::raw('SUM(order_item.qty) as total_qty'),
+                DB::raw('SUM(IF(order.id, order_item.qty, 0)) as total_qty'),
                 'product.sku',
                 'product.name'
             )
             ->LeftJoin('order_item', 'product.id', '=', 'order_item.product_id')
-            ->LeftJoin('order', 'order_item.order_id', '=', 'order.id')
-            ->where('delivery_date', $orderDate->value())
+            ->LeftJoin('order', function($join) use ($orderDate) {
+                $orderDateEscape = DB::connection()->getPdo()->quote($orderDate->value()->format('Y-m-d H:i:s'));
+                $join->on('order_item.order_id', '=', 'order.id');
+                $join->on('order.delivery_date', '=', DB::raw($orderDateEscape));
+            })
             ->groupBy('product.id')
-            ->orderByRaw('SUM(order_item.qty) ASC')
+            ->orderByRaw('SUM(IF(order.id, order_item.qty, 0)) ASC')
+            ->orderBy('product.name')
             ->get()->toArray();
     }
 

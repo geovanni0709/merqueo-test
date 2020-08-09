@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Merqueo\ApiRest\Delivery\Application;
 
 use Merqueo\ApiRest\Delivery\Domain\Contracts\DeliveryRepository;
-use Merqueo\ApiRest\Delivery\Domain\DeliveryEntity;
 use Merqueo\ApiRest\Delivery\Domain\DeliveryOrderId;
 
 /**
