@@ -42,12 +42,9 @@ Paso 6 Crear los datos de prueba
 php artisan db:seed
 
 # PRUEBAS
-Para ejecutar las pruebas ejecutar el comando ./vendor/bin/phpunit en la consola
 
 Ejecución de las pruebas
 ./vendor/bin/phpunit
-
-De igual forma adjuento dump de la base de datos.
 
 # ENDPOINTS
 
