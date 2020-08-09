@@ -51,25 +51,25 @@ De igual forma adjuento dump de la base de datos.
 
 # ENDPOINTS
 
-Consultar qué productos y qué cantidad puede ser alistada desde el inventario.
+Consultar qué productos y qué cantidad puede ser alistada desde el inventario.<br />
 dominio/rest/v1/inventory-can-delivery
 
-Consultar los productos que deben ser alistados por transportadores, y a qué transportador le corresponde cada pedido.
+Consultar los productos que deben ser alistados por transportadores, y a qué transportador le corresponde cada pedido.<br />
 dominio/rest/v1/inventory-delivery-provider
 
-Productos menos vendidos el día 1 de marzo.
-dominio/rest/v1/worst-selling-products/2019-03-01
+Productos menos vendidos el día 1 de marzo.<br />
+dominio/rest/v1/worst-selling-products/2019-03-01<br />
 Recibo la fecha a consultar.
 
-Dado el Id de un pedido, saber qué productos y qué cantidad pueden ser alistados. Según sistema de inventario y cuáles deben ser abastecidos por los proveedores.
-dominio/rest/v1/delivery/order/1
+Dado el Id de un pedido, saber qué productos y qué cantidad pueden ser alistados. Según sistema de inventario y cuáles deben ser abastecidos por los proveedores.<br />
+dominio/rest/v1/delivery/order/1<br />
 Recibo el ID de orden a consultar.
 
-Calcular el inventario del día 2 de marzo, teniendo en cuenta las pedidos despachados el 1 de marzo.
-dominio/rest/v1/inventory/calculate-next-day/2019-03-01
+Calcular el inventario del día 2 de marzo, teniendo en cuenta las pedidos despachados el 1 de marzo.<br />
+dominio/rest/v1/inventory/calculate-next-day/2019-03-01<br />
 Recibo la fecha anterior a consultar.
 
-Productos más vendidos el día 1 de marzo.
-dominio/rest/v1/best-selling-products/2019-03-01
+Productos más vendidos el día 1 de marzo.<br />
+dominio/rest/v1/best-selling-products/2019-03-01<br />
 Recibo la fecha a consultar.
 
